@@ -1,0 +1,31 @@
+POST https://localhost:5000/register
+Content-Type: application/json
+
+{    
+"username": "vii",
+"password": "rahul@456"
+}
+
+###
+
+POST https://localhost:5000/login
+Content-Type: application/json
+
+{    
+"username": "vii",
+"password": "rahul@456"
+}
+
+###
+POST  https://localhost:5000/messages
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoicmFodWwxMiIsImlhdCI6MTcwODA4NDcyOH0.Gzz3-NUmVKIFjUqbjJY74vIf0S7atsTY4usGJPgLfD4
+Content-Type: application/json
+
+{
+  "message": "Hello, world!"
+}
+
+###
+
+GET  https://localhost:5000/messages
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoicmFodWwxMiIsImlhdCI6MTcwODA4NDcyOH0.Gzz3-NUmVKIFjUqbjJY74vIf0S7atsTY4usGJPgLfD4
